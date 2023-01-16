@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Login | KPMG</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="../frontend/assets/logo.png" width="" height="55" alt="50">
+    </a>
+  </nav>
+  <div class="container s">
+    <div class="row">
+      <div class="col-md-6 sCon">
+        <div class="signup col-md-8">
+          <h3>Test Login</h3>
+          <div>
+            <label>Unique Code</label>
+            <input type="number" id="UniqueCode" placeholder="Enter your Unique Code"/>
+          </div>
+          <div>
+            <label>Date of Birth</label>
+            <input type="date" id="birthday" name="birthday"/>
+          </div>
+          <div>
+            <button class="log-button" onsubmit="login()"  onclick="window.location.href='selection.html'">Login</button>
+            <p>Forgot Unique Code? <a href="signup.html"><span>Regenerate Unique Code</span></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
