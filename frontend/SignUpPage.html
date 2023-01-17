@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Login | KPMG</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src=".assets/logo.png" width="" height="55" alt="50">
+    </a>
+  </nav>
+  <div class="container s">
+    <div class="row">
+      <div class="col-md-6 sCon">
+        <div class="signup col-md-8">
+          <h3>Test Sign Up</h3>
+          <div>
+            <label>Name</label>
+            <input type="text" id="Name" placeholder="Enter your Name"/>
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(+91) 93461-76879" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            <small>Format: (+91) 93461-76879</small>
+          </div>
+          <div>
+            <label for="primary-skills">Primary Skill:</label>
+            <select name="Primary-Skill" id="primary-skills">
+            <option value="python">Python</option>
+            <option value="c">C</option>
+            <option value="javascript">Javascript</option>
+            <option value="DBMS">DBMS</option>
+            </select>
+          </div>
+          <div>
+            <label for="secondary-skills">Primary Skill:</label>
+            <select name="Secondary-Skill" id="secondary-skills">
+            <option value="python">Python</option>
+            <option value="c">C</option>
+            <option value="javascript">Javascript</option>
+            <option value="DBMS">DBMS</option>
+            </select>
+          </div>
+          <div>
+            <label>IT Experience</label>
+            <input type="number" id="experience" name="IT Experience">
+          </div>
+          <div>
+            <button class="log-button" onsubmit="login()"  onclick="window.location.href='login.html'">Login</button>
+            <p>Login to your Account <a href="login.html"><span>Login</span></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
