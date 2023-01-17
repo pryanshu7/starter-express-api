@@ -349,11 +349,11 @@ body {
   display:flex;
   justify-content: center;
   align-items: center;
-  background:rgba(0, 36, 216, 0.814);
+  background:rgb(21, 44, 137);
   padding:10px;
   border-radius: 10px;
   margin-top:3%;
-  box-shadow: 3px 3px 2px rgba(57, 114, 207, 0.6);
+  box-shadow: 3px 3px 2px rgba(39, 112, 229, 0.889);
 }
 .left{
   width:30%;
