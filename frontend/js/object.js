@@ -162,7 +162,7 @@ function close_stream() {
         $('#web-cam-btn').removeClass('display-none')
     }, 1000)
 }
-
+`   `
 function detectFrame() {
     model.detect(video).then(predictions => {
         console.log("user",predictions.length)

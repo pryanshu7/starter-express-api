@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Environment Check | KPMG </title>
+  <title>Quiz | KPMG </title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -23,7 +23,7 @@
     <div class="row">
       <div class="justify-content-right  row col-md-6">
 
-        <h2>Environment Check</h2>
+        <h2>Live Proctoring</h2>
 
         <div class="demo-section" style="height:450px;">
           <h2 class="subheading demo-heading "></h2>
@@ -49,8 +49,8 @@
 
 
       <div class="float-left">
-        <button type="button" id="proceed" class=" btn btn-success " disabled onclick="window.location.href='quiz.html'"> Proceed to Exam</button>
-      </div>
+        <button type="button" id="proceed" class=" btn btn-success" disabled onclick="window.location.href='quiz.html'"> Proceed to Exam</button>
+      </div> 
 
 
     </div>
@@ -58,25 +58,91 @@
   </div>
 
   <div class="split right">
-    <div class="sCon instructions">
-      <div style="color: white;
-            font-weight: 500;">
-        <h2>Instructions</h2>
-        <div>
-          <p>Read all the intrusctions properly</p>
-          <ol>
-            <li>There are 6 <b>multiple choice questions.</b></li>
-            <li>There is no negative marking.</li>
-            <li>Press <b>"Save" button</b> after answering each question.</li>
-            <li>The entire exam is recorded along with your actions during the exam.</li>
-            <li>Do not try to leave the test window during the exam.</li>
-  
-          </ol>
-          <p>Click "Result" only after completition of the Exam.</p>
-  
+    <div class="row">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6 quiz-box">
+          <div id="question">
+            Which one of the following is not a step of requirement engineering?
+          </div>
+          <div id="options">
+            <div class="option" onclick="select(this)">
+              documentation
+            </div>
+            <div class="option" onclick="select(this)">
+              analysis
+            </div>
+            <div class="option" onclick="select(this)">
+              design
+            </div>
+          </div>
+          <div style="display: flex;">
+            <button style="background: #D3544B;
+                width:300px;
+                margin:auto;
+                margin-top: 5px;
+                padding:10px;
+                border-radius:10px;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                color:white;
+                text-transform: uppercase;" onclick="save(this)">Save</button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <div class="row" style="margin-top: 60px;">
+              <div class="col-md-4">
+                <div onclick="showQuestion(this)">
+                  <div class="question-box">1</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div onclick="showQuestion(this)">
+                  <div class="question-box">2</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div onclick="showQuestion(this)">
+                  <div class="question-box">3</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div onclick="showQuestion(this)">
+                  <div class="question-box">4</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div onclick="showQuestion(this)">
+                  <div class="question-box">5</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div onclick="showQuestion(this)">
+                  <div class="question-box">6</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div style="margin-top: 80px; margin-left: 100px; display: flex;
+              justify-content: center;
+              align-items: center;" class="">
+                <button style="background:#2ea100;
+                width:300px;
+                margin:auto;
+                margin-top: 5px;
+                padding:10px;
+                border-radius:10px;
+                border:none;
+                outline:none;
+                cursor:pointer;
+                color:white;
+                text-transform: uppercase;" onclick="result()">Result</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
   </div>
 

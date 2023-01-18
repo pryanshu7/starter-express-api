@@ -205,7 +205,7 @@ body {
 }
 .instructions{
   background:rgb(21, 44, 137);
-  width:75%;
+  width:90%;
   margin:auto;
   height:auto;
   margin-top:3%;
@@ -724,4 +724,24 @@ textarea{
   cursor:pointer;
   color:white;
   background:#6C66D0;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 10%;
+  top: 10%;
+}
+
+.right {
+  right: 2%;
+  top: 15%;
 }

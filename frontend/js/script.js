@@ -43,6 +43,7 @@ webgazer
        playAudio()
         alert("stop looking around")
        socket.emit("data","left")
+       alert("Looking left");
        error++;
 
       } else {
