@@ -163,12 +163,24 @@ function close_stream() {
     }, 1000)
 }
 `   `
+let noFaceCount = 0;
+let additionalPeople = 0;
+let cellPhone = 0;
+let other = 0;
 function detectFrame() {
     model.detect(video).then(predictions => {
         console.log("user",predictions.length)
         if(predictions.length>1){
             alert(`Please check your enviornment ${predictions.length} persons identified`)
+            additionalPeople+=1;
         }
+
+        else if(predictions.length<1){
+            alert(`No One detected in screen`)
+            noFaceCount += 1;
+            alert(noFaceCount)
+        }
+
         if(predictions[0])
       { 
         //    console.log(predictions[0].class)
@@ -176,9 +188,11 @@ function detectFrame() {
         if(predictions[0].class!="person"){
             if(predictions[0].class=="cell phone"){
                 alert(`Dont use ${predictions[0].class}`)
+                cellPhone += 1;
             }
             else{
                 alert(`${predictions[0].class} detected`)
+                other += 1;
 
             }
         }
