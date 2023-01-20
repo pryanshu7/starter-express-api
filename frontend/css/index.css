@@ -800,16 +800,27 @@ textarea{
   }
   
   .next,
-  .previous, .submit {
+  .previous {
   padding: 15px 10px;
   border-radius: 6px;
-  background: deepskyblue;
+  background: rgb(21, 44, 137);
   color: white;
   border:0;
   outline: none;
   cursor: pointer;
   width: 20%;
   }
+
+  .submit {
+    padding: 15px 10px;
+    border-radius: 6px;
+    background: rgb(191, 19, 19);
+    color: white;
+    border:0;
+    outline: none;
+    cursor: pointer;
+    width: 50%;
+    }
   
   .next.disable,
   .previous.disable{
