@@ -331,7 +331,8 @@ body {
 
 #result-box {
   border :3px solid rgb(185, 166, 177);
-  height: 400px;
+  height: 300px;
+  width: 321px;
   margin-top: 80px;
   background-color: #b6b6b62f;
   border-radius: 10px;
@@ -814,4 +815,11 @@ textarea{
   .previous.disable{
     cursor: not-allowed;
     opacity: .5;
+  }
+
+  .complete{
+    position: absolute;
+    left: 25%;
+    width: 100%;
+    height: 100%;
   }
