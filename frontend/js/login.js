@@ -20,7 +20,7 @@ function register() {
     }
 }
 
-function login() {
+/* function login() {
     var data =
     {
         "email": document.getElementById('email').value,
@@ -43,7 +43,25 @@ function login() {
             window.location.replace('login.html')
         }
     }
-}
+} */
+
+/* function login() {
+    name1 =  document.getElementById('Name').value
+    uniquecode = document.getElementById('UniqueCode').value
+    var regEx = /^[0-9a-zA-Z]+$/;
+
+    if (name1==null || name1==""){  
+        alert("Name can't be blank");  
+        return false;
+    }
+
+    if(!uniquecode.value.match(regEx) || uniquecode==null || uniquecode==""){
+        alert("Unique Code can't be blank");  
+        return false;
+    }
+
+    
+} */
 
 function getuser() {
     var jwt = localStorage.getItem('JWT_Token')
