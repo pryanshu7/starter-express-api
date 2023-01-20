@@ -255,3 +255,7 @@ function showResult() {
   correct = localStorage.getItem("result")
   x.innerText = `${correct} points`
 }
+
+function myFunction(){
+    document.getElementById("submit").disabled = false;
+}

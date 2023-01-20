@@ -171,14 +171,13 @@ function detectFrame() {
     model.detect(video).then(predictions => {
         console.log("user",predictions.length)
         if(predictions.length>1){
-            alert(`Please check your enviornment ${predictions.length} persons identified`)
+            //alert(`Please check your enviornment ${predictions.length} persons identified`)
             additionalPeople+=1;
         }
 
         else if(predictions.length<1){
-            alert(`No One detected in screen`)
+            //alert(`No One detected in screen`)
             noFaceCount += 1;
-            alert(noFaceCount)
         }
 
         if(predictions[0])
@@ -191,7 +190,7 @@ function detectFrame() {
                 cellPhone += 1;
             }
             else{
-                alert(`${predictions[0].class} detected`)
+                //alert(`${predictions[0].class} detected`)
                 other += 1;
 
             }
@@ -233,8 +232,12 @@ function load_webcam() {
         })
 }
 
+function myResult(){
+    alert("Out of Frame Detected: " +noFaceCount+ "\n" + "Additional People Detected: " +additionalPeople+ "\n" + "Cell Phone Detected: " +cellPhone+ "\n" + "Other Items Detected: " +other)
+}
 
-// function show(value){
+
+// fun)ction show(value){
 //      document.getElementById("displayobject").innerHTML(`<h3>${value}<h3>`)
 
 // }
